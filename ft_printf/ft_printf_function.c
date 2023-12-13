@@ -49,7 +49,7 @@ void	ft_putnbr(int nb)
 	{
 		ft_putchar(nb + '0');
 	}
-}////his function prints an integer nb to the standard output. It handles the special case where nb is equal to the minimum integer value (-2147483648) separately,
+}////this function prints an integer nb to the standard output. It handles the special case where nb is equal to the minimum integer value (-2147483648) separately,
 //as printing it directly would lead to overflow. For other negative values, it prints the negative sign,
 // updates nb to its absolute value, and then recursively calls itself to print the remaining digits.
 
