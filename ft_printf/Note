@@ -1,0 +1,4 @@
+LONG_MIN is an int that has a higher range if values compared to a normal int
+so in the line of code if (n == (unsigned long)LONG_MIN) we are asking it to compare it with the same variable type as n which is an unsigned long
+and also we want to check if for some reason the given integer to us is a negative
+if it is negative then give us 0, because the min for an unsigned long is 0
