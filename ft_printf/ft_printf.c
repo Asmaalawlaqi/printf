@@ -12,6 +12,8 @@
 
 #include "ft_printf.h"
 
+// it checks the format specifier that we are using in our ft_printf in the int main
+// and then uses the function needed according to the format specifier
 static int	checker(char c, va_list *args)
 {
 	if (c == 'c')
