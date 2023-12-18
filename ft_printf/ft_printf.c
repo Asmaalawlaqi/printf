@@ -12,6 +12,7 @@
 
 #include "ft_printf.h"
 
+// VARIADIXC
 // it checks the format specifier that we are using in our ft_printf in the int main
 // and then uses the function needed according to the format specifier
 static int	checker(char c, va_list *args)
@@ -52,6 +53,8 @@ int	ft_printf(const char *str, ...)
 		{
 			i++;
 			chars_printed = chars_printed + checker(str[i], &args);
+			// here we use str[i] in the checker function and it prints the required arg
+			// depending on the format specifier.
 		}
 		else
 		{
@@ -62,6 +65,14 @@ int	ft_printf(const char *str, ...)
 	}
 	va_end(args);
 	return (chars_printed);
+}
+
+int	main(void)
+{			// FORMAT SPECIFIER	   //VARIADIC LIST THAT HOLDS ALL TYPES OF ARGS
+	ft_printf("%s %d %p %x %X %i %u %c %%\n", "hahaha", 122, "dhfiusdhf", 435,
+			435, 122, -789, 'a');
+	printf("%s %d %p %x %X %i %u %c %%\n", "hahaha", 122, "dhfiusdhf", 435, 435,
+			122, -789, 'a');
 }
 
 // va_list: It's like a list or a pointer that helps you access the arguments passed to a function.
