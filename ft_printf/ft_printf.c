@@ -61,3 +61,8 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (chars_printed);
 }
+
+// va_list: It's like a list or a pointer that helps you access the arguments passed to a function.
+// va_start: Initializes the va_list to point to the first variable argument.
+// va_arg: Retrieves the value of the next argument in the list.
+// va_end: Cleans up the va_list after you're done using it.
