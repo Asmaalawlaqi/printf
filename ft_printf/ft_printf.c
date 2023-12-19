@@ -73,7 +73,7 @@ int	main(void)
 			435, 122, -789, 'a');
 	printf("%s %d %p %x %X %i %u %c %%\n", "hahaha", 122, "dhfiusdhf", 435, 435,
 			122, -789, 'a');
-}
+} let me send a
 
 // va_list: It's like a list or a pointer that helps you access the arguments passed to a function.
 // va_start: Initializes the va_list to point to the first variable argument.
